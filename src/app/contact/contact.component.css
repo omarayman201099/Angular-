@@ -1,0 +1,138 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.line {
+  height: 4px;
+  width: 80px;
+  background-color: #2C3E50;
+}
+
+
+.profile h2{
+color: #2C3E50;
+}
+.profile i{
+color: #2C3E50;
+}
+
+
+.input-group {
+  position: relative;
+  margin: 20px 0;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.input-group2 button{
+  background-color: #1ABC9C;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  transform: translateY(-50%);
+  font-size: 16px;
+
+  padding: 0 5px;
+  pointer-events: none;
+  transition: .5s;
+
+}
+
+.input-group input {
+  width: 50%;
+  height: 60px;
+  font-size: 16px;
+  color: #000;
+  padding: 0 10px;
+  background: transparent;
+  border: 1.2px solid black;
+  outline: none;
+  border-radius: 5px;
+
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+  top: -8px;
+  font-size: 12px;
+  border-radius: 5px;
+  color: #1ABC9C;
+}
+
+
+.omar{
+position: relative;
+margin: 20px 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+button{
+  color: #fff;
+  background-color: #1ABC9C;
+  border: none;
+  padding: 7px;
+  border-radius: 7px;
+
+
+}
+
+
+@media only screen and (max-width:800px){
+  .input-group  {
+    position: relative;
+    margin: 20px 0;
+    display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+
+  }
+  .input-group input{
+    width: 100%;
+  }
+  .input-group label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+
+    padding: 0 5px;
+    pointer-events: none;
+    transition: .5s;
+
+  }
+
+  .input-group  {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .omar{
+    position: relative;
+    margin: 20px 0;
+    display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+    }
+
+
+}

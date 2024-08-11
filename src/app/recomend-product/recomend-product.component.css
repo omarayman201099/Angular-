@@ -1,0 +1,76 @@
+*{
+
+  padding: 0;
+   box-sizing: border-box;
+
+}
+.marg img{
+  border-radius: 10px;
+}
+
+@media only screen  and  (max-width: 768px) {
+.marg img{
+
+  width: 100%;
+}
+
+}
+.marg{
+  position: relative;
+}
+
+.ccolor {
+  position: absolute;
+  background-color: #1ABC9C;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: .5s;
+  border-radius: 10px;
+
+}
+.ccolor:hover{
+  opacity: .8;
+  border-radius: 10px;
+
+}
+
+ham-menu {
+  height: 50px;
+  width: 40px;
+  margin-left: auto;
+  position: relative;
+}
+
+.ham-menu i {
+  height: 5px;
+  width: 100px;
+  font-size: 100px;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+
+.ham-menu span {
+  background-color: white;
+}
+
+.ham-menu span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(100);
+}
+
+.ham-menu span:nth-child(2) {
+  opacity: 0;
+}
+
+.ham-menu span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+}

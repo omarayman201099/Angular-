@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.containers-body{
+  display: flex;
+  background-color: #2C3E50;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.one{
+margin: 25px;
+}
+.two{
+  margin: 25px;
+}
+.two ul {
+  display: flex;
+}
+.two i {
+  font-size: 1.3rem;
+}
+
+.two ul li {
+  margin: 10px;
+  border: 1px white solid;
+  border-radius: 50%;
+  padding: 10px;
+}
+@media only screen and (max-width: 600px){
+  .containers-body{
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+

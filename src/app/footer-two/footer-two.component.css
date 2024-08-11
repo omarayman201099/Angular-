@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.footer-footer{
+  background-color: #18222C;
+  padding-top: 30px;
+  padding-bottom: 15px;
+
+
+
+}
+.footer-footer p{
+  color: #fff;
+  text-align: center;
+}
+
+
+
+@media only screen and (max-width:900px){
+
+  .footer-footer{
+
+    height: 50vh;
+
+
+
+  }
+}

@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+.about{
+background-color: #1ABC9C;
+height: 77vh;
+
+}
+.line{
+  height: 4px;
+    width: 80px;
+    background-color: antiquewhite;
+}
+.prgraf{
+  display: flex;
+}
+@media only screen and (max-width: 600px){
+  .prgraf{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .prgraf p{
+    padding-bottom: 20px;
+  }
+}
+

@@ -1,0 +1,28 @@
+<div class="container mt-5 mb-4 marg2 ">
+  <div class="row d-flex align-items-center justify-content-center ">
+
+      @for( product of list ; track product  )
+      {
+      <div  class="col-md-3 col-lg col-sm-12 marg  m-2 ">
+          <div  [class.bg-success]="$first"  class="bg-white " >
+              <img [src]="product.image" class="w-100" alt="">
+          </div>
+          <div class="ccolor">
+            <div class="ham-menu">
+              <i class="fa-solid fa-plus text-white"></i>
+            </div>
+          </div>
+      </div>
+      }
+
+
+  </div>
+</div>
+
+<h2 #h2 class="text-center  text-white oamrssss " >recommended-products (click me to show)</h2>
+
+  @defer ( on interaction (h2)) {
+    <app-recommended-products></app-recommended-products>
+
+  }
+
